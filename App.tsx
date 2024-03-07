@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { StyleSheet, Text, View, ActivityIndicator, ScrollView, TextInput, Pressable } from 'react-native';
 import * as Location from 'expo-location';
 import axios from 'axios';
+import { format } from 'date-fns';
 
 interface WeatherData {
   name: string;
@@ -27,6 +28,27 @@ interface ForecastData {
   city: {
     name: string;
   }
+}
+
+function groupDates(forecastList: ForecastData['list']) {
+  const byDays: { [key: string]: { items: ForecastData['list'], avgTemp: number } } = {};
+
+  forecastList.forEach(item => {
+    const day = item.dt_txt.split(' ')[0];
+
+    if (!byDays[day]) {
+      byDays[day] = { items: [], avgTemp: 0 };
+    }
+    byDays[day].items.push(item);
+  });
+
+  Object.keys(byDays).forEach(day => {
+    const dayForecasts = byDays[day].items;
+    const avgTemp = dayForecasts.reduce((acc, curr) => acc + curr.main.temp, 0) / dayForecasts.length;
+    byDays[day].avgTemp = parseFloat(avgTemp.toFixed(2));
+  });
+
+  return byDays;
 }
 
 export default function App() {
@@ -142,6 +164,7 @@ export default function App() {
       </View>
       {currWeather && (
         <View>
+          <Text style={styles.headerTwo}>Current Weather:</Text>
           <Text style={styles.text}>📍 {currWeather.name}</Text>
           <Text style={styles.text}>🌡️ {currWeather.main.temp}°C (Feels like: {currWeather.main.feels_like}°C)</Text>
           <Text style={styles.text}>Humidity: {currWeather.main.humidity}</Text>
@@ -151,11 +174,17 @@ export default function App() {
       )}
       {forecast && (
         <View>
-          <Text style={styles.header}>{forecast.city.name} Forecast (5-Days)</Text>
-          {forecast.list.map((item, index) => (
-            <Text key={index} style={styles.text}>
-              {item.dt_txt}: {item.main.temp}°C
-            </Text>
+          <Text style={styles.headerOne}>{forecast.city.name} Forecast (5-Days)</Text>
+          {Object.entries(groupDates(forecast.list)).map(([day, { items, avgTemp }], index) => (
+            <View key={index}>
+              <Text style={styles.headerTwo}>{format(new Date(day), 'EEE dd.MM')}</Text>
+              <Text style={styles.text}>Average: {avgTemp}°C</Text>
+              {items.map((item, idx) => (
+                <Text key={idx} style={styles.text}>
+                  {format(new Date(item.dt_txt), 'HH:mm')}: {item.main.temp}°C
+                </Text>
+              ))}
+            </View>
           ))}
         </View>
       )}
@@ -177,7 +206,7 @@ const styles = StyleSheet.create({
   },
   title: {
     color: "#F5F7F8",
-    fontSize: 24,
+    fontSize: 25,
     fontWeight: 'bold',
     marginBottom: 20,
   },
@@ -197,9 +226,23 @@ const styles = StyleSheet.create({
     marginVertical: 2,
     color: "#F5F7F8"
   },
-  header: {
+  headerOne: {
     color: "#F5F7F8",
-    fontSize: 24,
+    fontSize: 25,
+    fontWeight: 'bold',
+    marginTop: 20,
+    marginBottom: 5,
+  },
+  headerTwo: {
+    color: "#F5F7F8",
+    fontSize: 23,
+    fontWeight: 'bold',
+    marginTop: 20,
+    marginBottom: 5,
+  },
+  headerThree: {
+    color: "#F5F7F8",
+    fontSize: 20,
     fontWeight: 'bold',
     marginTop: 20,
     marginBottom: 5,
