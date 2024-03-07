@@ -125,19 +125,21 @@ export default function App() {
 
   if (isLoading) {
     return (
-      <View style={styles.container}>
+      <View>
         <ActivityIndicator size="large" />
       </View>
     );
   }
 
   return (
-    <ScrollView style={styles.container}>
-      <Text style={styles.title}>Weather & Forecast App 🌞</Text>
-      <TextInput style={styles.input} placeholder="Enter A City" value={location} onChangeText={setLocation} />
-      <Pressable style={styles.button} onPress={() => getWeatherData(location)}>
-        <Text style={styles.buttonText}>Check Weather</Text>
-      </Pressable>
+    <ScrollView style={styles.scrollView}>
+      <View style={styles.containerCenter}>
+        <Text style={styles.title}>Weather & Forecast App 🌞</Text>
+        <TextInput style={styles.input} placeholder="Enter A City Name" placeholderTextColor="#F5F7F8" value={location} onChangeText={setLocation} />
+        <Pressable style={styles.button} onPress={() => getWeatherData(location)}>
+          <Text style={styles.buttonText}>Check Weather 🔎</Text>
+        </Pressable>
+      </View>
       {currWeather && (
         <View>
           <Text style={styles.text}>📍 {currWeather.name}</Text>
@@ -163,10 +165,15 @@ export default function App() {
 }
 
 const styles = StyleSheet.create({
-  container: {
+  scrollView: {
     flex: 1,
     padding: 20,
+    paddingTop: 50,
     backgroundColor: "#45474B",
+  },
+  containerCenter: {
+    justifyContent: 'center',
+    alignItems: 'center',
   },
   title: {
     color: "#F5F7F8",
@@ -175,6 +182,8 @@ const styles = StyleSheet.create({
     marginBottom: 20,
   },
   input: {
+    width: '100%',
+    maxWidth: 500,
     height: 40,
     color: "#F5F7F8",
     borderColor: '#F5F7F8',
@@ -196,6 +205,9 @@ const styles = StyleSheet.create({
     marginBottom: 5,
   },
   button: {
+    alignContent: 'center',
+    width: '100%',
+    maxWidth: 500,
     backgroundColor: "#F4CE14",
     padding: 10,
     alignItems: "center",

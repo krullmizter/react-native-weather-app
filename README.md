@@ -2,7 +2,7 @@
 
 ### This is a simple, cross-platform React Native app to demonstrate some of my overall WebDev, AppDev, React, TypeScript, and API knowledge
 
-#### This website uses:
+### This app uses:
 
 * [React Native](https://reactnative.dev/)
     * [Expo](https://expo.dev/)
@@ -13,20 +13,26 @@
 
 <hr  />
 
-Feel free to fork or clone this repo. Some prerequisite:
 
-* Node.js
-* npm or Yarn
-* expo-cli `npm install -g expo-cli`
+### Setup
+Feel free to clone or fork the repo
 
-After cloning the repo, just navigate to the root directory, and run either: `npm install` or `yarn install`
+**Some prerequisite:**
+* Node.js (npm comes pre-bundled with Node)
+* npm / Yarn `npm install --g yarn`
+* expo-cli: `npm install -g expo-cli`
 
-Test the app by being in the root directory, and running: `npx expo start` 
-Hint. Use the `-c` flag if you want to reload without the cache
+After cloning the repo, just navigate to the root directory, and depending on your setup run either: 
+`npm install` or `yarn install`
+
+**Start the Expo app development**
+Test and start developing the app by navigating to the root directory, and running: 
+`npx expo start` 
+<i>Hint. Use the `-c` flag if you want to start the app without cache</i>
 
 <hr>
   
-#### OpenWeatherMap API
+### OpenWeatherMap API
 
 If you want to use the OpenWeatherMap API, then you need to head over to their website, sign up and get yourself an API key. They've got a free one that works great for starting off or testing. After you have an account and API key:
 
