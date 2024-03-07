@@ -1,6 +1,6 @@
 import { WEATHER_API_KEY } from "@env";
 import React, { useEffect, useState } from 'react';
-import { StyleSheet, Text, View, ActivityIndicator, ScrollView, TextInput, Pressable } from 'react-native';
+import { SafeAreaView, StyleSheet, Text, View, ActivityIndicator, ScrollView, TextInput, Pressable } from 'react-native';
 import * as Location from 'expo-location';
 import axios from 'axios';
 import { format } from 'date-fns';
@@ -45,7 +45,7 @@ function groupDates(forecastList: ForecastData['list']) {
   Object.keys(byDays).forEach(day => {
     const dayForecasts = byDays[day].items;
     const avgTemp = dayForecasts.reduce((acc, curr) => acc + curr.main.temp, 0) / dayForecasts.length;
-    byDays[day].avgTemp = parseFloat(avgTemp.toFixed(2));
+    byDays[day].avgTemp = parseFloat(avgTemp.toFixed(1));
   });
 
   return byDays;
@@ -154,42 +154,47 @@ export default function App() {
   }
 
   return (
+    <SafeAreaView style={{ flex: 1 }}>
     <ScrollView style={styles.scrollView}>
       <View style={styles.containerCenter}>
         <Text style={styles.title}>Weather & Forecast App 🌞</Text>
         <TextInput style={styles.input} placeholder="Enter A City Name" placeholderTextColor="#F5F7F8" value={location} onChangeText={setLocation} />
         <Pressable style={styles.button} onPress={() => getWeatherData(location)}>
-          <Text style={styles.buttonText}>Check Weather 🔎</Text>
+          <Text style={styles.buttonText}>Check City Weather 🔎</Text>
+        </Pressable>
+        <Pressable style={styles.button} onPress={() => getWeatherData()}>
+          <Text style={styles.buttonText}>Use My Location 📍</Text>
         </Pressable>
       </View>
       {currWeather && (
         <View>
-          <Text style={styles.headerTwo}>Current Weather:</Text>
-          <Text style={styles.text}>📍 {currWeather.name}</Text>
-          <Text style={styles.text}>🌡️ {currWeather.main.temp}°C (Feels like: {currWeather.main.feels_like}°C)</Text>
-          <Text style={styles.text}>Humidity: {currWeather.main.humidity}</Text>
-          <Text style={styles.text}>Pressure: {currWeather.main.pressure}</Text>
-          <Text style={styles.text}>Wind: {currWeather.wind.speed}</Text>
+          <Text style={styles.headerTwo}>📍 Current Weather in: {currWeather.name}</Text>
+          <Text style={styles.headerThree}>🌡️ {currWeather.main.temp.toFixed(1)}°C (Feels like: {currWeather.main.feels_like.toFixed(1)}°C)</Text>
+          <Text style={styles.text}>Humidity: {currWeather.main.humidity}%</Text>
+          <Text style={styles.text}>Pressure: {currWeather.main.pressure}hPa</Text>
+          <Text style={styles.text}>Wind: {currWeather.wind.speed}m/s</Text>
         </View>
       )}
       {forecast && (
         <View>
-          <Text style={styles.headerOne}>{forecast.city.name} Forecast (5-Days)</Text>
+          <Text style={styles.headerTwo}>{forecast.city.name} Forecast (5-Days)</Text>
           {Object.entries(groupDates(forecast.list)).map(([day, { items, avgTemp }], index) => (
             <View key={index}>
               <Text style={styles.headerTwo}>{format(new Date(day), 'EEE dd.MM')}</Text>
-              <Text style={styles.text}>Average: {avgTemp}°C</Text>
+              <Text style={styles.text}>Average: {avgTemp.toFixed(1)}°C</Text>
               {items.map((item, idx) => (
                 <Text key={idx} style={styles.text}>
-                  {format(new Date(item.dt_txt), 'HH:mm')}: {item.main.temp}°C
+                  {format(new Date(item.dt_txt), 'HH:mm')}: {item.main.temp.toFixed(1)}°C
                 </Text>
               ))}
             </View>
           ))}
         </View>
       )}
+      <Text style={styles.text}>Samuel Granvik © {new Date().getFullYear()} </Text>
       {errMsg && <Text>{errMsg}</Text>}
     </ScrollView>
+    </SafeAreaView>
   );
 }
 
@@ -198,6 +203,7 @@ const styles = StyleSheet.create({
     flex: 1,
     padding: 20,
     paddingTop: 50,
+    paddingBottom: 50,
     backgroundColor: "#45474B",
   },
   containerCenter: {
@@ -244,8 +250,6 @@ const styles = StyleSheet.create({
     color: "#F5F7F8",
     fontSize: 20,
     fontWeight: 'bold',
-    marginTop: 20,
-    marginBottom: 5,
   },
   button: {
     alignContent: 'center',
@@ -261,5 +265,5 @@ const styles = StyleSheet.create({
     color: "#F5F7F8",
     fontSize: 18,
     fontWeight: 'bold',
-  },
+  }
 });
