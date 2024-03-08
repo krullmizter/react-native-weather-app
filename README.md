@@ -13,7 +13,6 @@
 
 <hr  />
 
-
 ### Setup
 Feel free to clone or fork the repo
 
@@ -40,5 +39,21 @@ If you want to use the OpenWeatherMap API, then you need to head over to their w
 * Make sure that the `.env` file is inside your `.gitignore`!
 * Paste your API key inside the `.env` file, and name it something cool 😎
 * For example: `WEATHER_API_KEY=1337`
+
+<hr>
+
+### TODO
+
+Stuff and features I'd like to add or improve
+
+* Caching
+* Improved 5-day forecast, accurate current day forecast
+* City search autofill
+* UI/UX settings
+    * Possible to change different units
+    * Transition effects
+* Charts for high and low temperatures
+* Redux or alternative state management (if the app grows 😎)
+* Predictions using AI, and/or translations with LLMs 😮
 
 <hr>
