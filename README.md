@@ -1,6 +1,7 @@
 # React Native Weather App 🌞
 
 ### This is a simple, cross-platform React Native app to demonstrate some of my overall WebDev, AppDev, React, TypeScript, and API knowledge
+*Sadly I'm not a graphics designer, so be gentle*
 
 ### This app uses:
 
@@ -10,6 +11,10 @@
     * [dotenv](https://www.npmjs.com/package/dotenv)
 * [TypeScript](https://www.typescriptlang.org/)
 * Free [OpenWeatherMap API](https://openweathermap.org/api)
+    * Current weather
+    * 5-day forecasts
+    * Geocoding
+* Using Prettier for automatic code formatting
 
 <hr  />
 
@@ -46,13 +51,17 @@ If you want to use the OpenWeatherMap API, then you need to head over to their w
 
 Stuff and features I'd like to add or improve
 
-* Caching
-* Improved 5-day forecast, accurate current day forecast
-* City search autofill
-* UI/UX settings
-    * Possible to change different units
+* Caching and overall performance enhancements
+* Improved 5-day forecast, more accurate current day forecast
+* Improving the UI
+    * Implementing better icons and other media
+    * Native feedback, such as error messages as alerts/pop-ups, etc.
     * Transition effects
+* City search input autofill
+* UI/UX app user settings
+    * Possible to change different units
 * Charts for high and low temperatures
+* Adding overall testing, CI/CD, and other development focused tooling
 * Redux or alternative state management (if the app grows 😎)
 * Predictions using AI, and/or translations with LLMs 😮
 

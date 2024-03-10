@@ -1,10 +1,13 @@
+// Just the styles in a seprate file to ease the readability and organization of the code base
 import { StyleSheet, TextStyle } from "react-native";
 
+// Using some const variables for easy re-use
 const baseText: TextStyle = {
   color: "#F7F7F7",
   fontWeight: "500",
 };
 
+// Exporting some variables to be used directly in for example App.tsx
 export const colors = {
   darkBackground: "#121212",
   accentColor: "#FFD369",

@@ -1,7 +1,15 @@
+/* 
+  This is the logic for the weather fetching and forecasting logic
+
+  Axios for HTTP requests, 
+  expo-location for native device location
+  date-fns for better date formatting
+*/
 import axios from "axios";
 import * as Location from "expo-location";
 import { format, parseISO } from "date-fns";
 
+// TS interfaces for defining the shape of both the weather and forecast data
 export interface WeatherData {
   name: string;
   main: {
@@ -29,6 +37,7 @@ export interface ForecastData {
   };
 }
 
+// Main weather function to fetch the current weather and forecasting data. Takes an optional city name or uses the device's location
 export async function getWeatherData(
   city: string | undefined,
   apiKey: string,
@@ -38,6 +47,7 @@ export async function getWeatherData(
   let latitude: number | null = null;
   let longitude: number | null = null;
 
+  // If a city name is provided, use the free geocoding API to get the city's latitude and longitude
   if (city) {
     try {
       const geocodeRes = await axios.get(
@@ -57,6 +67,7 @@ export async function getWeatherData(
       );
     }
   } else {
+    // If no city name is provided, use the device's location. (if granted permission by the user)
     const locationPermission =
       await Location.requestForegroundPermissionsAsync();
     if (locationPermission.status === "granted") {
@@ -70,6 +81,7 @@ export async function getWeatherData(
     }
   }
 
+  // Get weather and forecasting data, with axios, by using the gathered latitude and longitude (city name / device's location)
   if (latitude !== null && longitude !== null) {
     try {
       const weatherUrl = `${baseUrl}/weather?lat=${latitude}&lon=${longitude}&units=${unit}&appid=${apiKey}`;
@@ -91,6 +103,7 @@ export async function getWeatherData(
   }
 }
 
+// Util. function to group forecasting data by their dates and also calculating the daily average, minimum, and maximum temps. (Needs improving, maybe combining with new API call...)
 export function groupDates(forecastList: ForecastData["list"]): {
   [key: string]: any;
 } {
@@ -119,6 +132,7 @@ export function groupDates(forecastList: ForecastData["list"]): {
     byDays[day].maxTemp = Math.max(byDays[day].maxTemp, item.main.temp);
   });
 
+  // Calculate the avg. temp. for each given day
   Object.keys(byDays).forEach((day) => {
     const dayForecasts = byDays[day].items;
     const avgTemp =

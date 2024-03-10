@@ -1,3 +1,10 @@
+/* 
+  This is the main file, and component for the app
+
+  Beginning by importing needed React components & utilities
+  date-fns for date formatting, @env for environment variables (API key), some additional custom utility and style modules
+  Importing some utility functions and interfaces from WeatherService.tsx (weather and forecasting logic)
+*/
 import React, { useEffect, useState, useCallback } from "react";
 import {
   SafeAreaView,
@@ -20,10 +27,13 @@ import {
 } from "./WeatherService";
 import { styles, colors } from "./Styles";
 
+// Constants for openweatherapi base URL, and units
 const BASEURL = "https://api.openweathermap.org/data/2.5";
 const UNIT = "metric";
 
+// Main component
 export default function App() {
+  // Hooks for managing UI states and data
   const [isLoading, setIsLoading] = useState(false);
   const [errMsg, setErrMsg] = useState<string | null>(null);
   const [location, setLocation] = useState("");
@@ -31,9 +41,11 @@ export default function App() {
   const [currWeather, setCurrWeather] = useState<WeatherData | null>(null);
   const [forecast, setForecast] = useState<ForecastData | null>(null);
 
+  // Windows dimension hook, used for more responsive design
   const { width } = useWindowDimensions();
   const dynamicPadding = width > 768 ? "20%" : "5%";
 
+  // Fetching weather data, and setting initial states
   const fetchWeatherData = useCallback(
     async (city?: string) => {
       setIsLoading(true);
@@ -47,25 +59,34 @@ export default function App() {
           error instanceof Error ? error.message : "Unable to get weather data"
         );
       } finally {
-        setIsLoading(false);
+        setIsLoading(false); // Loading state reset
       }
     },
-    [WEATHER_API_KEY, BASEURL, UNIT]
+    [WEATHER_API_KEY, BASEURL, UNIT] // useCallback dependencies
   );
 
+  // Hook used when fetching weather data on component mount
   useEffect(() => {
     fetchWeatherData();
   }, [fetchWeatherData]);
 
+  // Utility function to figure out if the device's screen is large based on its width
   const isLargeScreen = () => {
     const windowWidth = Dimensions.get("window").width;
     return windowWidth >= 768;
   };
 
+  /* 
+    Main rendering components for visualizing the app
+    Components for rendering the app's: header, footer and entire content area wrapped inside appropriate views
+    All in all including: views, texts, inputs, buttons, conditional logic, etc.
+    Styling found in Style.tsx
+  */
   const Header = () => (
     <View style={[styles.contentContainer, styles.header]}>
       <View style={styles.containerCenter}>
         <Text style={styles.title}>Weather & Forecast App 🌞</Text>
+        {/* Lets user input a city name for detailed weather forecast */}
         <View style={styles.inputContainer}>
           <TextInput
             style={styles.input}
@@ -75,6 +96,7 @@ export default function App() {
             onChangeText={setLocation}
           />
         </View>
+        {/* Using pressable (i.e. buttons) to let users fetch data based on a city name or their device's location (to be reworked)*/}
         <Pressable
           style={styles.button}
           onPress={() => fetchWeatherData(location)}
@@ -95,12 +117,14 @@ export default function App() {
     </View>
   );
 
+  // Component for handling current and daily 5-day forecasting visualizations
   const Footer = () => (
     <View>
       {isLoading ? (
         <ActivityIndicator size="large" color="#00ff00" />
       ) : (
         <>
+          {/* Detailed current weather, adapting for large screens */}
           {currWeather && (
             <View style={styles.weatherDetailsContainer}>
               <Text style={styles.headerTwo}>
@@ -141,6 +165,7 @@ export default function App() {
               <Text style={[styles.headerTwo, { marginBottom: 10 }]}>
                 {forecast.city.name} 5-Day Forecast
               </Text>
+              {/* Expandable detailed forecast for a day */}
               {Object.entries(groupDates(forecast.list)).map(
                 ([day, { items, avgTemp, minTemp, maxTemp }], index) => (
                   <Pressable
@@ -153,6 +178,7 @@ export default function App() {
                     style={[
                       styles.dayContainer,
                       {
+                        // Even and odd has different background colors for better UI/UX
                         backgroundColor:
                           index % 2 === 0
                             ? colors.evenDayBackground
@@ -202,10 +228,11 @@ export default function App() {
     </View>
   );
 
+  // Main return of the func. component, applying the SafeAreaView and ScrollView structures for content display.
   return (
     <SafeAreaView
       style={[
-        styles.safeArea,
+        styles.safeArea, // Styles found in Styles.tsx
         { paddingRight: dynamicPadding, paddingLeft: dynamicPadding },
       ]}
     >
