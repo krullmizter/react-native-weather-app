@@ -1,6 +1,6 @@
 # React Native Weather App 🌞
 
-### This is a simple, cross-platform React Native app to demonstrate some of my overall WebDev, AppDev, React, TypeScript, and API knowledge
+### A simple, cross-platform React Native app to demonstrate my overall WebDev, AppDev, React, TypeScript, and API knowledge 
 *Sadly I'm not a graphics designer, so be gentle*
 
 ### This app uses:
