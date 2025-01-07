@@ -5509,13 +5509,12 @@ react-devtools-core@^4.27.7:
     shell-quote "^1.6.1"
     ws "^7"
 
-react-dom@18.2.0:
-  version "18.2.0"
-  resolved "https://registry.npmjs.org/react-dom/-/react-dom-18.2.0.tgz"
-  integrity sha512-6IMTriUmvsjHUjNtEDudZfuDQUoWXVxKHhlEGSk81n4YFS+r/Kl99wXiwlVXtPBtJenozv2P+hxDsw9eA7Xo6g==
+react-dom@19.0.0:
+  version "19.0.0"
+  resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-19.0.0.tgz#43446f1f01c65a4cd7f7588083e686a6726cfb57"
+  integrity sha512-4GV5sHFG0e/0AD4X+ySy6UJd3jVl1iNsNHdpad0qhABJ11twS3TTBnseqsKurKcsNqCEFeGL3uLpVChpIO3QfQ==
   dependencies:
-    loose-envify "^1.1.0"
-    scheduler "^0.23.0"
+    scheduler "^0.25.0"
 
 "react-is@^16.12.0 || ^17.0.0 || ^18.0.0", react-is@^18.0.0:
   version "18.2.0"
@@ -5879,12 +5878,10 @@ scheduler@0.24.0-canary-efb381bbf-20230505:
   dependencies:
     loose-envify "^1.1.0"
 
-scheduler@^0.23.0:
-  version "0.23.0"
-  resolved "https://registry.npmjs.org/scheduler/-/scheduler-0.23.0.tgz"
-  integrity sha512-CtuThmgHNg7zIZWAXi3AsyIzA3n4xx7aNyjwC2VJldO2LMVDhFK+63xGqq6CsJH4rTAt6/M+N4GhZiDYPx9eUw==
-  dependencies:
-    loose-envify "^1.1.0"
+scheduler@^0.25.0:
+  version "0.25.0"
+  resolved "https://registry.yarnpkg.com/scheduler/-/scheduler-0.25.0.tgz#336cd9768e8cceebf52d3c80e3dcf5de23e7e015"
+  integrity sha512-xFVuu11jh+xcO7JOAGJNOXld8/TcEHK/4CituBUeUb5hqxJLj9YuemAEuvm9gQ/+pgXYfbQuqAkiYu+u7YEsNA==
 
 selfsigned@^2.4.1:
   version "2.4.1"
