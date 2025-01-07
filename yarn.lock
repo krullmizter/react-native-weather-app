@@ -3523,10 +3523,10 @@ expo-modules-core@2.0.6:
   dependencies:
     invariant "^2.2.4"
 
-expo-status-bar@~1.11.1:
-  version "1.11.1"
-  resolved "https://registry.npmjs.org/expo-status-bar/-/expo-status-bar-1.11.1.tgz"
-  integrity sha512-ddQEtCOgYHTLlFUe/yH67dDBIoct5VIULthyT3LRJbEwdpzAgueKsX2FYK02ldh440V87PWKCamh7R9evk1rrg==
+expo-status-bar@~2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/expo-status-bar/-/expo-status-bar-2.0.0.tgz#dd99adc2ace12a24c92718cd0f97b93347103393"
+  integrity sha512-vxxdpvpNDMTEc5uTiIrbTvySKKUsOACmfl8OZuUdjNle05oGqwtq3v5YObwym/njSByjoyuZX8UpXBZnxvarwQ==
 
 expo@~52.0.11:
   version "52.0.11"
