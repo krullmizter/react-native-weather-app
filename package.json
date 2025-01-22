@@ -14,7 +14,7 @@
     "date-fns": "^3.3.1",
     "expo": "~52.0.26",
     "expo-location": "^18.0.4",
-    "expo-status-bar": "~1.11.1",
+    "expo-status-bar": "~2.0.1",
     "react": "18.2.0",
     "react-dom": "19.0.0",
     "react-native": "0.73.9",
@@ -24,7 +24,7 @@
     "@babel/core": "^7.20.0",
     "@types/react": "~18.2.45",
     "react-native-dotenv": "^3.4.11",
-    "typescript": "^5.7.2"
+    "typescript": "^5.7.3"
   },
   "private": true
 }
