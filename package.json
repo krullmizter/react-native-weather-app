@@ -16,7 +16,7 @@
     "expo-location": "^18.1.6",
     "expo-status-bar": "~2.2.3",
     "react": "19.1.1",
-    "react-dom": "19.1.0",
+    "react-dom": "19.1.1",
     "react-native": "0.80.2",
     "react-native-web": "~0.21.0"
   },
