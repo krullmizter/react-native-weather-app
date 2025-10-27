@@ -21,7 +21,7 @@
     "react-native-web": "~0.21.2"
   },
   "devDependencies": {
-    "@babel/core": "^7.28.4",
+    "@babel/core": "^7.28.5",
     "@types/react": "~19.2.2",
     "react-native-dotenv": "^3.4.11",
     "typescript": "^5.9.3"
