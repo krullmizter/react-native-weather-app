@@ -12,7 +12,7 @@
     "@expo/metro-runtime": "~6.1.2",
     "axios": "^1.13.2",
     "date-fns": "^4.1.0",
-    "expo": "~54.0.27",
+    "expo": "~54.0.29",
     "expo-location": "^19.0.8",
     "expo-status-bar": "~3.0.9",
     "react": "19.2.1",
