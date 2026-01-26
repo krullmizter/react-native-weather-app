@@ -15,14 +15,14 @@
     "expo": "~54.0.31",
     "expo-location": "^19.0.8",
     "expo-status-bar": "~3.0.9",
-    "react": "19.2.3",
+    "react": "19.2.4",
     "react-dom": "19.2.3",
     "react-native": "0.83.1",
     "react-native-web": "~0.21.2"
   },
   "devDependencies": {
     "@babel/core": "^7.28.6",
-    "@types/react": "~19.2.8",
+    "@types/react": "~19.2.9",
     "react-native-dotenv": "^3.4.11",
     "typescript": "^5.9.3"
   },
