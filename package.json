@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@expo/metro-runtime": "~6.1.2",
-    "axios": "^1.13.4",
+    "axios": "^1.13.5",
     "date-fns": "^4.1.0",
     "expo": "~54.0.33",
     "expo-location": "^19.0.8",
