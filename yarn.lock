@@ -1188,12 +1188,12 @@
     postcss "~8.4.32"
     resolve-from "^5.0.0"
 
-"@expo/metro-runtime@~55.0.6":
-  version "55.0.6"
-  resolved "https://registry.yarnpkg.com/@expo/metro-runtime/-/metro-runtime-55.0.6.tgz#351e8d0470766015600c86b9c72a90dc8b05febe"
-  integrity sha512-l8VvgKN9md+URjeQDB+DnHVmvpcWI6zFLH6yv7GTv4sfRDKyaZ5zDXYjTP1phYdgW6ea2NrRtCGNIxylWhsgtg==
+"@expo/metro-runtime@~55.0.7":
+  version "55.0.7"
+  resolved "https://registry.yarnpkg.com/@expo/metro-runtime/-/metro-runtime-55.0.7.tgz#8102147f25695b8720640abf748b1f5e480d6049"
+  integrity sha512-fV+DYvJ+A3fKEwkpJiXUhrpsWy4HjjbdapwJi/QmnGLFKYrzGvGqsWG+xf3mmUDwP413t6GL9162bnyMReYOaA==
   dependencies:
-    "@expo/log-box" "55.0.7"
+    "@expo/log-box" "55.0.8"
     anser "^1.4.9"
     pretty-format "^29.7.0"
     stacktrace-parser "^0.1.10"
