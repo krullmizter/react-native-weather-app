@@ -986,11 +986,6 @@
   dependencies:
     chalk "^4.1.2"
 
-"@expo/dom-webview@^55.0.3":
-  version "55.0.3"
-  resolved "https://registry.yarnpkg.com/@expo/dom-webview/-/dom-webview-55.0.3.tgz#97dfe2ede4a17eb05a44ba65487724192f07a6cf"
-  integrity sha512-bY4/rfcZ0f43DvOtMn8/kmPlmo01tex5hRoc5hKbwBwQjqWQuQt0ACwu7akR9IHI4j0WNG48eL6cZB6dZUFrzg==
-
 "@expo/dom-webview@^55.0.5":
   version "55.0.5"
   resolved "https://registry.yarnpkg.com/@expo/dom-webview/-/dom-webview-55.0.5.tgz#00628e9e5e5116b8f5c92840bed0a5a06e3ccc77"
@@ -1060,12 +1055,12 @@
     anser "^1.4.9"
     stacktrace-parser "^0.1.10"
 
-"@expo/log-box@55.0.8":
-  version "55.0.8"
-  resolved "https://registry.yarnpkg.com/@expo/log-box/-/log-box-55.0.8.tgz#248b95d29d31a725faa6f4d11fa5587a365214a1"
-  integrity sha512-WVEuW1XcntUdOpQk8k9cUymM5FHKmEcPr6QO9SVIin3WYk5FbbwHRYr1T6GfwWF0UA2s9w9heeYolesq99vFIw==
+"@expo/log-box@55.0.11":
+  version "55.0.11"
+  resolved "https://registry.yarnpkg.com/@expo/log-box/-/log-box-55.0.11.tgz#8e1efa826217405e154f3cdde2fba9a6d8a10ede"
+  integrity sha512-JQHFLWkskIbJi6cxYMjErx8lQqfFJilDQLKmdTO3m3YkdmN9GE/CrzjOfVlCG0DGEGZJ90br0pGKvGPdXNsHKw==
   dependencies:
-    "@expo/dom-webview" "^55.0.3"
+    "@expo/dom-webview" "^55.0.5"
     anser "^1.4.9"
     stacktrace-parser "^0.1.10"
 
@@ -1094,12 +1089,12 @@
     postcss "~8.4.32"
     resolve-from "^5.0.0"
 
-"@expo/metro-runtime@~55.0.7":
-  version "55.0.7"
-  resolved "https://registry.yarnpkg.com/@expo/metro-runtime/-/metro-runtime-55.0.7.tgz#8102147f25695b8720640abf748b1f5e480d6049"
-  integrity sha512-fV+DYvJ+A3fKEwkpJiXUhrpsWy4HjjbdapwJi/QmnGLFKYrzGvGqsWG+xf3mmUDwP413t6GL9162bnyMReYOaA==
+"@expo/metro-runtime@~55.0.10":
+  version "55.0.10"
+  resolved "https://registry.yarnpkg.com/@expo/metro-runtime/-/metro-runtime-55.0.10.tgz#8bbb827d0936100e21a67dfc288da57ffa150845"
+  integrity sha512-7v+ldTvMWRa1ml83Jel9W2f8qT/NZZWrlHaEjf29nb72JTEO50+Xac9PWLo+X3LCDAAuyYuBGKYXOJwfqxV0fQ==
   dependencies:
-    "@expo/log-box" "55.0.8"
+    "@expo/log-box" "55.0.11"
     anser "^1.4.9"
     pretty-format "^29.7.0"
     stacktrace-parser "^0.1.10"
