@@ -991,6 +991,11 @@
   resolved "https://registry.yarnpkg.com/@expo/dom-webview/-/dom-webview-55.0.5.tgz#00628e9e5e5116b8f5c92840bed0a5a06e3ccc77"
   integrity sha512-lt3uxYOCk3wmWvtOOvsC35CKGbDAOx5C2EaY8SH1JVSfBzqmF8Cs0Xp1MPxncDPMyxpMiWx5SvvV/iLF1rJU4A==
 
+"@expo/dom-webview@^55.0.6":
+  version "55.0.6"
+  resolved "https://registry.yarnpkg.com/@expo/dom-webview/-/dom-webview-55.0.6.tgz#216908464ddf0196a2828210042712a651109f20"
+  integrity sha512-ZNm8tiNEZysxrr36J0x4mOCGyJDcaIvL/3tMxBz0VJIJDcV19xjuJAhJQxHovu+jKx6s9tRyEAINa1mdrzV39g==
+
 "@expo/env@^2.0.11", "@expo/env@~2.1.1":
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/@expo/env/-/env-2.1.1.tgz#95c047b69dee14a6ebaaa0415c4896ac69f1bf0d"
@@ -1055,6 +1060,15 @@
     anser "^1.4.9"
     stacktrace-parser "^0.1.10"
 
+"@expo/log-box@55.0.12":
+  version "55.0.12"
+  resolved "https://registry.yarnpkg.com/@expo/log-box/-/log-box-55.0.12.tgz#da3bb055eb094916f88d5fee8b918d7a0a628467"
+  integrity sha512-f9ARS8J60cq3LLNdIqmUjYwyerBzVS5Ecp7KjIf3GOIPjW0571rkcwLz4/U18l/1DeSkSzIkYsNl2TC9oTdWaQ==
+  dependencies:
+    "@expo/dom-webview" "^55.0.6"
+    anser "^1.4.9"
+    stacktrace-parser "^0.1.10"
+
 "@expo/metro-config@55.0.19", "@expo/metro-config@~55.0.19":
   version "55.0.19"
   resolved "https://registry.yarnpkg.com/@expo/metro-config/-/metro-config-55.0.19.tgz#83a738c8b64ecdd55c5b73cce2f5edcbc350620c"
@@ -1080,12 +1094,12 @@
     postcss "~8.4.32"
     resolve-from "^5.0.0"
 
-"@expo/metro-runtime@~55.0.10":
-  version "55.0.10"
-  resolved "https://registry.yarnpkg.com/@expo/metro-runtime/-/metro-runtime-55.0.10.tgz#8bbb827d0936100e21a67dfc288da57ffa150845"
-  integrity sha512-7v+ldTvMWRa1ml83Jel9W2f8qT/NZZWrlHaEjf29nb72JTEO50+Xac9PWLo+X3LCDAAuyYuBGKYXOJwfqxV0fQ==
+"@expo/metro-runtime@~55.0.11":
+  version "55.0.11"
+  resolved "https://registry.yarnpkg.com/@expo/metro-runtime/-/metro-runtime-55.0.11.tgz#86abebda2ba21c697f9672202b8f3de54b618d18"
+  integrity sha512-4KKi/jGrIEXi2YGu0hYTVr0CEeRJy5SXbCrz9+KDZkuD3ROwKNpM1DBawni5rhPVovFnR323HBck9GaxhnfrRw==
   dependencies:
-    "@expo/log-box" "55.0.11"
+    "@expo/log-box" "55.0.12"
     anser "^1.4.9"
     pretty-format "^29.7.0"
     stacktrace-parser "^0.1.10"
