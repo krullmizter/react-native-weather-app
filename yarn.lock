@@ -2316,10 +2316,10 @@ expo-keep-awake@~55.0.7:
   resolved "https://registry.yarnpkg.com/expo-keep-awake/-/expo-keep-awake-55.0.7.tgz#7bdddec590a6f15937abba4b17bb25e1b618aba3"
   integrity sha512-QBWOEu8FkPBGYc0h0rsCkSTMJNBEKgzVsmLuQpO7V79V9sPR052k3Iiu/G8Kzmny2enyHYYed8RY+CUsip/SeQ==
 
-expo-location@^55.1.8:
-  version "55.1.8"
-  resolved "https://registry.yarnpkg.com/expo-location/-/expo-location-55.1.8.tgz#031a7e94e95cb91bbe42c87e6661070acf60be21"
-  integrity sha512-mEExFf84nmWLwi14GFfUsFLrCm10gbcqFn9EPXpuruQ28YMtJWgCD+jJtESYPQkYF44N21fVok3T28fLuCqydA==
+expo-location@^55.1.9:
+  version "55.1.9"
+  resolved "https://registry.yarnpkg.com/expo-location/-/expo-location-55.1.9.tgz#fa7d8179f7b46e7ed7a079384383e51ec9ab5f3a"
+  integrity sha512-PIH9/qeyhtGh190FyIJNZYHXZOoi42SbVHY9IoTMBmqWLHf1BJyGhPpFlaLBSCjxObqfVZmrWsN5dtjueSwYQA==
   dependencies:
     "@expo/image-utils" "^0.8.13"
 
