@@ -863,7 +863,7 @@
   dependencies:
     chalk "^4.1.2"
 
-"@expo/dom-webview@^56.0.4", "@expo/dom-webview@^56.0.5", "@expo/dom-webview@~56.0.5":
+"@expo/dom-webview@^56.0.5", "@expo/dom-webview@~56.0.5":
   version "56.0.5"
   resolved "https://registry.yarnpkg.com/@expo/dom-webview/-/dom-webview-56.0.5.tgz#2a09924714d7419f24c7f573c00bba0b55e1eb38"
   integrity sha512-UIEJxkLg6cHqofKrpWpkn9E6ApxVRtCgZhZkARPr9VV7rBVloJgeroTHs31YgU/JpbI5lLQOnfOlGo54W6C2Ew==
@@ -935,15 +935,6 @@
     "@expo/config" "~56.0.8"
     chalk "^4.1.2"
 
-"@expo/log-box@56.0.4":
-  version "56.0.4"
-  resolved "https://registry.yarnpkg.com/@expo/log-box/-/log-box-56.0.4.tgz#b6b37338fb25043fbaf8169b5ec2df7ef7e07afe"
-  integrity sha512-1KN5JWZ67stO/5geWsXXYb2/7sLcvRbXzaYHIHgnlEQ4hGdQ6KcD1A9sBT/4CTlqq0yNbExW9IoekDzVUWt7ow==
-  dependencies:
-    "@expo/dom-webview" "^56.0.4"
-    anser "^1.4.9"
-    stacktrace-parser "^0.1.10"
-
 "@expo/log-box@^56.0.12":
   version "56.0.12"
   resolved "https://registry.yarnpkg.com/@expo/log-box/-/log-box-56.0.12.tgz#ed5bd7d76f36d5b100a191d800a53513c14f89f2"
@@ -995,12 +986,12 @@
     micromatch "^4.0.4"
     walker "^1.0.8"
 
-"@expo/metro-runtime@~56.0.4":
-  version "56.0.4"
-  resolved "https://registry.yarnpkg.com/@expo/metro-runtime/-/metro-runtime-56.0.4.tgz#6c1cf80f6e4221c5eb6b5920f4d39dc5d7f3d23e"
-  integrity sha512-JP20fYYeU4+nv47v0UV0PMsXbeLrXdO/0A5Z5Idr4kqcl8PTEbbICwD1dGv8kFogFkKeNYsyKkB0J8d6hkmRBg==
+"@expo/metro-runtime@~56.0.13":
+  version "56.0.13"
+  resolved "https://registry.yarnpkg.com/@expo/metro-runtime/-/metro-runtime-56.0.13.tgz#95b66e4a527a8f9aac3d807bae8f3ec185df7341"
+  integrity sha512-aMaFa/RPYm2iQoyYOB5q8AxDmWvf4E2yFbZ6rmBIQWaIPDdixGVUlLQeV8DlDAfZ/j+pNYO7l5M+774WbgkTgg==
   dependencies:
-    "@expo/log-box" "56.0.4"
+    "@expo/log-box" "^56.0.12"
     anser "^1.4.9"
     pretty-format "^29.7.0"
     stacktrace-parser "^0.1.10"
