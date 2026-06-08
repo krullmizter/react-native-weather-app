@@ -986,10 +986,10 @@
     micromatch "^4.0.4"
     walker "^1.0.8"
 
-"@expo/metro-runtime@~56.0.13":
-  version "56.0.13"
-  resolved "https://registry.yarnpkg.com/@expo/metro-runtime/-/metro-runtime-56.0.13.tgz#95b66e4a527a8f9aac3d807bae8f3ec185df7341"
-  integrity sha512-aMaFa/RPYm2iQoyYOB5q8AxDmWvf4E2yFbZ6rmBIQWaIPDdixGVUlLQeV8DlDAfZ/j+pNYO7l5M+774WbgkTgg==
+"@expo/metro-runtime@~56.0.14":
+  version "56.0.14"
+  resolved "https://registry.yarnpkg.com/@expo/metro-runtime/-/metro-runtime-56.0.14.tgz#dd7bba9fc41e3b7ca1b3211145c753ee34c45e31"
+  integrity sha512-xqSWX7W1jd/B8MzDOJkc/iHAtIsHOMYrDya/jJkEj8A6XdN4XqtmxqfAQ2oWcpYi47vH97lECDp8aoP7jO6v0Q==
   dependencies:
     "@expo/log-box" "^56.0.12"
     anser "^1.4.9"
