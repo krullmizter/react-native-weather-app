@@ -9,7 +9,7 @@
     "web": "expo start --web"
   },
   "dependencies": {
-    "@expo/metro-runtime": "~56.0.14",
+    "@expo/metro-runtime": "~56.0.15",
     "axios": "^1.17.0",
     "date-fns": "^4.4.0",
     "expo": "~56.0.9",
