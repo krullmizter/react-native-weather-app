@@ -14,7 +14,7 @@
     "date-fns": "^4.4.0",
     "expo": "~56.0.12",
     "expo-location": "^56.0.18",
-    "expo-status-bar": "~56.0.4",
+    "expo-status-bar": "~57.0.0",
     "react": "19.2.7",
     "react-dom": "19.2.7",
     "react-native": "0.86.0",
