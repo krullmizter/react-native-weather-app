@@ -936,7 +936,7 @@
     "@expo/config" "~57.0.5"
     chalk "^4.1.2"
 
-"@expo/log-box@^57.0.0", "@expo/log-box@^57.0.1":
+"@expo/log-box@^57.0.1":
   version "57.0.1"
   resolved "https://registry.yarnpkg.com/@expo/log-box/-/log-box-57.0.1.tgz#a6e97ac588a550bced80697c51adb58031018c92"
   integrity sha512-fuVNHhOerdRWtpq27gD6JTSVYESsfRu+SMdrNCWxW+gFnusS6dGKfx3lKGBZ4ZkMNiLWn8maBHo39YKzJNXFYQ==
@@ -986,12 +986,12 @@
     micromatch "^4.0.4"
     walker "^1.0.8"
 
-"@expo/metro-runtime@~57.0.3":
-  version "57.0.3"
-  resolved "https://registry.yarnpkg.com/@expo/metro-runtime/-/metro-runtime-57.0.3.tgz#af751673bc854aa5e24ecaf4a16240bd6fd41857"
-  integrity sha512-FMXIpvPIlAvJlaQmlmP79gNt7KS5DyruKSOkOW1DTkXnJOiXQnzvebqPLOEYH71fbS1emJ3Dq45lDz7+sryVbA==
+"@expo/metro-runtime@~57.0.7":
+  version "57.0.7"
+  resolved "https://registry.yarnpkg.com/@expo/metro-runtime/-/metro-runtime-57.0.7.tgz#d18aa266ce9954a6396e9ca97e67504ad58ae762"
+  integrity sha512-95UeoN/YsLellvskKsFGN9vKBwNc5k70ysO3skqfL3VusWlYIiYmPY+MpEWNz8A8W2CjLg9AKwZKAGrFj6znQg==
   dependencies:
-    "@expo/log-box" "^57.0.0"
+    "@expo/log-box" "^57.0.1"
     anser "^1.4.9"
     pretty-format "^29.7.0"
     stacktrace-parser "^0.1.10"
