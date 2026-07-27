@@ -900,19 +900,6 @@
     resolve-from "^5.0.0"
     semver "^7.6.0"
 
-"@expo/image-utils@^0.11.3":
-  version "0.11.3"
-  resolved "https://registry.yarnpkg.com/@expo/image-utils/-/image-utils-0.11.3.tgz#e5b930990920035517eb9ddf416bfad6d2115cdb"
-  integrity sha512-yMVjkndhXm9mct0uMq+ndxqT6FgAnhucdUfmXuQ6V6uE021GOiYCACO+KZ0MB4vearPSvbWTGfi32QQr2qocfQ==
-  dependencies:
-    "@expo/require-utils" "^57.0.3"
-    "@expo/spawn-async" "^1.8.0"
-    chalk "^4.0.0"
-    getenv "^2.0.0"
-    jimp-compact "0.16.1"
-    parse-png "^2.1.0"
-    semver "^7.6.0"
-
 "@expo/image-utils@^0.11.4":
   version "0.11.4"
   resolved "https://registry.yarnpkg.com/@expo/image-utils/-/image-utils-0.11.4.tgz#2101c05a8449540c12f74687600f2792b3918cb1"
@@ -1073,15 +1060,6 @@
     expo-modules-autolinking "~57.0.9"
     resolve-from "^5.0.0"
     semver "^7.6.0"
-
-"@expo/require-utils@^57.0.3":
-  version "57.0.3"
-  resolved "https://registry.yarnpkg.com/@expo/require-utils/-/require-utils-57.0.3.tgz#b2bcac04f0f227aad8412ac3a78a6a3b5c26093f"
-  integrity sha512-ns05X1K8tM+Qtzp6dNloUFOopSdh3J+HC61BtOR8WHhgtPFyX8TKuO2diqZUqVg9K8yfkWug7g8tBS0qRniSTA==
-  dependencies:
-    "@babel/code-frame" "^7.20.0"
-    "@babel/core" "^7.25.2"
-    "@babel/plugin-transform-modules-commonjs" "^7.24.8"
 
 "@expo/require-utils@^57.0.4":
   version "57.0.4"
@@ -2285,12 +2263,12 @@ expo-keep-awake@~57.0.1:
   resolved "https://registry.yarnpkg.com/expo-keep-awake/-/expo-keep-awake-57.0.1.tgz#75dfd3d6faeb0f32eb8b670d6b736375fdf2cdb8"
   integrity sha512-28lkFImeXTS+bhAjuCFV7w7tW5bXg27BJVrxv+nC/nyYa86qEa0oFeHwqol6ha5k4pdVDQgBF09GM4A1k76Ssg==
 
-expo-location@^57.0.5:
-  version "57.0.5"
-  resolved "https://registry.yarnpkg.com/expo-location/-/expo-location-57.0.5.tgz#0b0b7dadecf6d0404860d25885967e5f5150a224"
-  integrity sha512-mwsbiZ9yusGS76MEKfKZpwmeYVYK860x3y3kkhor0p5RjKt0UEHiRkvLEIlPgl1jf0xuzY5++NDSHs1HxefSAw==
+expo-location@^57.0.6:
+  version "57.0.6"
+  resolved "https://registry.yarnpkg.com/expo-location/-/expo-location-57.0.6.tgz#9f828b74d222cc6539b1e5009fd2c3fc5a57964e"
+  integrity sha512-V9lcReOI9AANg9ITECzrTXUBW0lXjMaeWrf1zMDaJ+KeLkdkbIulEaDAuoj5PR5OZzAau7B8XAR54Z0JQnFBmw==
   dependencies:
-    "@expo/image-utils" "^0.11.3"
+    "@expo/image-utils" "^0.11.4"
 
 expo-modules-autolinking@~57.0.9:
   version "57.0.9"
