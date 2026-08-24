@@ -13,7 +13,7 @@
     "axios": "^1.19.0",
     "date-fns": "^4.4.0",
     "expo": "~57.0.15",
-    "expo-location": "^57.0.7",
+    "expo-location": "^57.0.12",
     "expo-status-bar": "~57.0.1",
     "react": "19.2.8",
     "react-dom": "19.2.8",
