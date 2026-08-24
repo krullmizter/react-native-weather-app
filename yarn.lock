@@ -901,20 +901,7 @@
     resolve-from "^5.0.0"
     semver "^7.6.0"
 
-"@expo/image-utils@^0.11.4":
-  version "0.11.4"
-  resolved "https://registry.yarnpkg.com/@expo/image-utils/-/image-utils-0.11.4.tgz#2101c05a8449540c12f74687600f2792b3918cb1"
-  integrity sha512-pn/4770DIEOcYZr484uazuwg20FX/qaDkeMRF6J+oxejynDmEmO8wLsCudaNShFE0BhyKGQTYrs2rsRhqrqESw==
-  dependencies:
-    "@expo/require-utils" "^57.0.4"
-    "@expo/spawn-async" "^1.8.0"
-    chalk "^4.0.0"
-    getenv "^2.0.0"
-    jimp-compact "0.16.1"
-    parse-png "^2.1.0"
-    semver "^7.6.0"
-
-"@expo/image-utils@^0.11.5":
+"@expo/image-utils@^0.11.4", "@expo/image-utils@^0.11.5":
   version "0.11.5"
   resolved "https://registry.yarnpkg.com/@expo/image-utils/-/image-utils-0.11.5.tgz#47cd85c9d09ab2fb155823da62b71b9ae0f7ffa7"
   integrity sha512-KPQBTpmpAfy/Vu9y4wPW808/qtZxjYmyJg8cm2QCPAupp+qEWA3b5zmk0ulOwQ9OgeHxuCPgUqWgkwHFo7UsrQ==
@@ -950,7 +937,7 @@
     "@expo/config" "~57.0.8"
     chalk "^4.1.2"
 
-"@expo/log-box@^57.0.2", "@expo/log-box@^57.0.3":
+"@expo/log-box@^57.0.3":
   version "57.0.3"
   resolved "https://registry.yarnpkg.com/@expo/log-box/-/log-box-57.0.3.tgz#89c81b30083b98c11d5d2cffba535a0fcab8d144"
   integrity sha512-qv/cMliNax6es07Un/4IGJIcs4PUuhTKKTrJZX/0X2YRcOT5cqm/QicibZwTIbiZWi1i8P4YBRQTfFT2B17giw==
@@ -1074,15 +1061,6 @@
     expo-modules-autolinking "~57.0.11"
     resolve-from "^5.0.0"
     semver "^7.6.0"
-
-"@expo/require-utils@^57.0.4":
-  version "57.0.4"
-  resolved "https://registry.yarnpkg.com/@expo/require-utils/-/require-utils-57.0.4.tgz#fcf4377a64a21a70c00c787a9b8fc95ac438cc79"
-  integrity sha512-e7xbg/9BTQcsZE/oErafZXtI7kh5IgfasLJ97J5sFSzX2cA74pDvdlhW1KHVSaDkQyQv6h1LSLhsY7dEeOk7hw==
-  dependencies:
-    "@babel/code-frame" "^7.20.0"
-    "@babel/core" "^7.25.2"
-    "@babel/plugin-transform-modules-commonjs" "^7.24.8"
 
 "@expo/require-utils@^57.0.5":
   version "57.0.5"
@@ -2236,10 +2214,10 @@ expo-keep-awake@~57.0.1:
   resolved "https://registry.yarnpkg.com/expo-keep-awake/-/expo-keep-awake-57.0.1.tgz#75dfd3d6faeb0f32eb8b670d6b736375fdf2cdb8"
   integrity sha512-28lkFImeXTS+bhAjuCFV7w7tW5bXg27BJVrxv+nC/nyYa86qEa0oFeHwqol6ha5k4pdVDQgBF09GM4A1k76Ssg==
 
-expo-location@^57.0.7:
-  version "57.0.7"
-  resolved "https://registry.yarnpkg.com/expo-location/-/expo-location-57.0.7.tgz#396275bd1fef59a959f774afc7732e08755b198b"
-  integrity sha512-HPsS6Sse8GgMv9QiENXUEp9awl0O6iX0mFKJkxsHtC1HiouDXKCDlSnW66/E6U1ykwZ2M9ymJnZLRpWu0ua+/g==
+expo-location@^57.0.12:
+  version "57.0.12"
+  resolved "https://registry.yarnpkg.com/expo-location/-/expo-location-57.0.12.tgz#1e131f2580a1699b51391e211026ac33b68c583c"
+  integrity sha512-Fnh1dzIvZgc2mX7fXuXf6NxbEttZQLEnSXCbFHCLNtxyImUf/sURE93C9Jed+IfS/ozmtl84s/1nfz/cI87e9A==
   dependencies:
     "@expo/image-utils" "^0.11.4"
 
