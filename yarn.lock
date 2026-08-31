@@ -901,7 +901,7 @@
     resolve-from "^5.0.0"
     semver "^7.6.0"
 
-"@expo/image-utils@^0.11.4", "@expo/image-utils@^0.11.5":
+"@expo/image-utils@^0.11.5":
   version "0.11.5"
   resolved "https://registry.yarnpkg.com/@expo/image-utils/-/image-utils-0.11.5.tgz#47cd85c9d09ab2fb155823da62b71b9ae0f7ffa7"
   integrity sha512-KPQBTpmpAfy/Vu9y4wPW808/qtZxjYmyJg8cm2QCPAupp+qEWA3b5zmk0ulOwQ9OgeHxuCPgUqWgkwHFo7UsrQ==
@@ -2214,12 +2214,12 @@ expo-keep-awake@~57.0.1:
   resolved "https://registry.yarnpkg.com/expo-keep-awake/-/expo-keep-awake-57.0.1.tgz#75dfd3d6faeb0f32eb8b670d6b736375fdf2cdb8"
   integrity sha512-28lkFImeXTS+bhAjuCFV7w7tW5bXg27BJVrxv+nC/nyYa86qEa0oFeHwqol6ha5k4pdVDQgBF09GM4A1k76Ssg==
 
-expo-location@^57.0.12:
-  version "57.0.12"
-  resolved "https://registry.yarnpkg.com/expo-location/-/expo-location-57.0.12.tgz#1e131f2580a1699b51391e211026ac33b68c583c"
-  integrity sha512-Fnh1dzIvZgc2mX7fXuXf6NxbEttZQLEnSXCbFHCLNtxyImUf/sURE93C9Jed+IfS/ozmtl84s/1nfz/cI87e9A==
+expo-location@^57.0.14:
+  version "57.0.14"
+  resolved "https://registry.yarnpkg.com/expo-location/-/expo-location-57.0.14.tgz#788bace38d0cfe284a4e88bcb0062d58de60bd18"
+  integrity sha512-LX4r9842hHluqiCdA0zcgFpxxZsILh5MorhMOnpuPa4IpOaph4kOfKWVESO9Q6opM1+ryw/eOAo3/B7k8IIjPQ==
   dependencies:
-    "@expo/image-utils" "^0.11.4"
+    "@expo/image-utils" "^0.11.5"
 
 expo-modules-autolinking@~57.0.10, expo-modules-autolinking@~57.0.11:
   version "57.0.11"
