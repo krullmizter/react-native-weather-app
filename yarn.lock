@@ -875,11 +875,6 @@
   dependencies:
     chalk "^4.1.2"
 
-"@expo/dom-webview@^57.0.1":
-  version "57.0.1"
-  resolved "https://registry.yarnpkg.com/@expo/dom-webview/-/dom-webview-57.0.1.tgz#e41e9ab9b691046c944ef2d0cd874cf316894097"
-  integrity sha512-lAKsME4SAq+8sf56oN0DX5TBYyruupoRxbWbD2xf9RnKY8y6x8eb9LCE5pxSN0qyWdqnp+0wmyWzDkKboThKAw==
-
 "@expo/dom-webview@^58.0.2", "@expo/dom-webview@~58.0.2":
   version "58.0.2"
   resolved "https://registry.yarnpkg.com/@expo/dom-webview/-/dom-webview-58.0.2.tgz#f90a43ebc4647bb42a40fd4c080c39f1e689e760"
@@ -952,15 +947,6 @@
   resolved "https://registry.yarnpkg.com/@expo/log-box-utils/-/log-box-utils-58.0.2.tgz#9c6ee08372765020c59723da19cf63295b478049"
   integrity sha512-My8Lwe9FU/yDwwzqwi5LN2rzzDcJqIAZKrD9f0XHZEKz/FQnWJYdt1rsV7+RwqMGeGq2XsxTCVT1ggTCOvumxw==
 
-"@expo/log-box@^57.0.4":
-  version "57.0.4"
-  resolved "https://registry.yarnpkg.com/@expo/log-box/-/log-box-57.0.4.tgz#373148b27267f70fa093516a46c9abbbd0f0df0a"
-  integrity sha512-IxwS9s1L2muj8mj8AQSuiy7u8OFJdc02NRFo2me/Tj6DiaeG5SREqmpBE4rQpR2cadqSg5jl8Qab8Cjie616dg==
-  dependencies:
-    "@expo/dom-webview" "^57.0.1"
-    anser "^1.4.9"
-    stacktrace-parser "^0.1.10"
-
 "@expo/log-box@^58.0.12":
   version "58.0.12"
   resolved "https://registry.yarnpkg.com/@expo/log-box/-/log-box-58.0.12.tgz#eddb4b3e34484608f5d9d3bc39d410657bafc14d"
@@ -1017,12 +1003,12 @@
     jest-worker "^29.7.0"
     walker "^1.0.8"
 
-"@expo/metro-runtime@~57.0.15":
-  version "57.0.15"
-  resolved "https://registry.yarnpkg.com/@expo/metro-runtime/-/metro-runtime-57.0.15.tgz#395e286f193b97ce1e5d4da1764a85459a8acecc"
-  integrity sha512-9RaFkqIzRud6ol9fc5ZKHgNDYeDjQVBdAQC+rjSQ6RiKV0pY+SjDqGmKY5a4M9TaV0qLMCNNrp5R88BqC2xbuQ==
+"@expo/metro-runtime@~58.0.14":
+  version "58.0.14"
+  resolved "https://registry.yarnpkg.com/@expo/metro-runtime/-/metro-runtime-58.0.14.tgz#4ac796c54b699de5661e8fcee883bdac4f8e4b18"
+  integrity sha512-IIvTo+RpN5jZVuYspQdECsxQ03VGWjZnGS6wtr9U7DERBpykUe+ZSHDZ1hsrvQ7HAucsVoKr9np0xAscGEuXtg==
   dependencies:
-    "@expo/log-box" "^57.0.4"
+    "@expo/log-box" "^58.0.12"
     anser "^1.4.9"
     pretty-format "^29.7.0"
     stacktrace-parser "^0.1.10"
