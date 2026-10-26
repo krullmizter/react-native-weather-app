@@ -947,10 +947,10 @@
   resolved "https://registry.yarnpkg.com/@expo/log-box-utils/-/log-box-utils-58.0.2.tgz#9c6ee08372765020c59723da19cf63295b478049"
   integrity sha512-My8Lwe9FU/yDwwzqwi5LN2rzzDcJqIAZKrD9f0XHZEKz/FQnWJYdt1rsV7+RwqMGeGq2XsxTCVT1ggTCOvumxw==
 
-"@expo/log-box@^58.0.12":
-  version "58.0.12"
-  resolved "https://registry.yarnpkg.com/@expo/log-box/-/log-box-58.0.12.tgz#eddb4b3e34484608f5d9d3bc39d410657bafc14d"
-  integrity sha512-IzDYoFY2iUsmSDvl1V7YUM7UkCPDyMVS4e4a38c2LnFc1A3WGMUiQh+vsHLYTPKjIelu4r7/u4V7Gxtfa0oJgA==
+"@expo/log-box@^58.0.12", "@expo/log-box@^58.0.13":
+  version "58.0.13"
+  resolved "https://registry.yarnpkg.com/@expo/log-box/-/log-box-58.0.13.tgz#ed828b5c1bd4b2909dc74b5309e42ab56ee1a52b"
+  integrity sha512-Cl9qc77nWjQVivUI5/OCPSEP8s20EtbK3Ivy5ayy+uHO0Cf+XatatWfTvKiHO38VOpT2ywlROzZb4XZyxZUZ1Q==
   dependencies:
     "@expo/dom-webview" "^58.0.2"
     "@expo/log-box-utils" "^58.0.2"
@@ -1003,12 +1003,12 @@
     jest-worker "^29.7.0"
     walker "^1.0.8"
 
-"@expo/metro-runtime@~58.0.14":
-  version "58.0.14"
-  resolved "https://registry.yarnpkg.com/@expo/metro-runtime/-/metro-runtime-58.0.14.tgz#4ac796c54b699de5661e8fcee883bdac4f8e4b18"
-  integrity sha512-IIvTo+RpN5jZVuYspQdECsxQ03VGWjZnGS6wtr9U7DERBpykUe+ZSHDZ1hsrvQ7HAucsVoKr9np0xAscGEuXtg==
+"@expo/metro-runtime@~58.0.15":
+  version "58.0.15"
+  resolved "https://registry.yarnpkg.com/@expo/metro-runtime/-/metro-runtime-58.0.15.tgz#0424b46d90a2dcd5989140670830ea19fdac59fa"
+  integrity sha512-csALn54hZUkHFM3FofWlU5MQcJB62deCt+JtHOhQogRT+k/VTtTuhLQCrCUOtO2MAUsyhrcRRa6Nh79e1bkvfg==
   dependencies:
-    "@expo/log-box" "^58.0.12"
+    "@expo/log-box" "^58.0.13"
     anser "^1.4.9"
     pretty-format "^29.7.0"
     stacktrace-parser "^0.1.10"
