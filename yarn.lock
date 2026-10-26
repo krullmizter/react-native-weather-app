@@ -820,9 +820,9 @@
     node-forge "^1.4.0"
 
 "@expo/config-plugins@~58.0.9":
-  version "58.0.9"
-  resolved "https://registry.yarnpkg.com/@expo/config-plugins/-/config-plugins-58.0.9.tgz#30f0794f83c07962dde5e5e917ec0fd0d2fa4159"
-  integrity sha512-HyP7V1QgDxeHcOEh4qQH7cfK7cI7wNp0y9lszAu98SRYCshhDbwB9gWpFfnpX1GQUtgiqG4Hvgh1z3ntcGwAjw==
+  version "58.0.10"
+  resolved "https://registry.yarnpkg.com/@expo/config-plugins/-/config-plugins-58.0.10.tgz#d38031fd190227866ca72578a2ed2d1260e5c8ff"
+  integrity sha512-oW0geRREubSsqV2d0EwkK0rRcAoB7a68CnJx7s8Al33HoTtEg7KLTQNcKlSTmmwoUESQQvAmzNqAZy4ajuCBKA==
   dependencies:
     "@expo/config-types" "^58.0.3"
     "@expo/json-file" "~11.2.1"
@@ -835,7 +835,7 @@
     glob "^13.0.0"
     semver "^7.7.4"
     slugify "^1.6.6"
-    xcode "^3.0.1"
+    xcode "^4.0.0"
     xml2js "0.6.0"
 
 "@expo/config-types@^58.0.3":
@@ -3709,9 +3709,9 @@ signal-exit@^3.0.2:
   resolved "https://registry.npmjs.org/signal-exit/-/signal-exit-3.0.7.tgz"
   integrity sha512-wnD2ZE+l+SPC/uoS0vXeE9L1+0wuaMqKlfz9AMUo38JsyLSBWSFcHR1Rri62LZc12vLr1gb3jl7iwQhgwpAbGQ==
 
-simple-plist@^1.1.0:
+simple-plist@^1.3.1:
   version "1.3.1"
-  resolved "https://registry.npmjs.org/simple-plist/-/simple-plist-1.3.1.tgz"
+  resolved "https://registry.yarnpkg.com/simple-plist/-/simple-plist-1.3.1.tgz#16e1d8f62c6c9b691b8383127663d834112fb017"
   integrity sha512-iMSw5i0XseMnrhtIzRb7XpQEXepa9xhWxGUojHBL43SIpQuDQkh3Wpy67ZbDzZVr6EKxvwVChnVpdl8hEVLDiw==
   dependencies:
     bplist-creator "0.1.0"
@@ -3998,11 +3998,6 @@ utils-merge@1.0.1:
   resolved "https://registry.npmjs.org/utils-merge/-/utils-merge-1.0.1.tgz"
   integrity sha512-pMZTvIkT1d+TFGvDOqodOclx0QWkkgi6Tdoa8gC8ffGAAqz9pzPTZWAybbsHHoED/ztMtkv/VoYTYyShUn81hA==
 
-uuid@^7.0.3:
-  version "7.0.3"
-  resolved "https://registry.npmjs.org/uuid/-/uuid-7.0.3.tgz"
-  integrity sha512-DPSke0pXhTZgoF/d+WSt2QaKMCFSfx7QegxEWT+JOuHF5aWrKEn0G+ztjuJg/gG8/ItK+rbPCD/yNv8yyih6Cg==
-
 validate-npm-package-name@^5.0.0:
   version "5.0.1"
   resolved "https://registry.yarnpkg.com/validate-npm-package-name/-/validate-npm-package-name-5.0.1.tgz#a316573e9b49f3ccd90dbb6eb52b3f06c6d604e8"
@@ -4081,13 +4076,12 @@ ws@^8.12.1:
   resolved "https://registry.yarnpkg.com/ws/-/ws-8.21.0.tgz#012e413fc07429945121b0c153158c4343086951"
   integrity sha512-Vsp28b7DRcimFQvrqu2Wek3z1iYxDCWqHYB8Qsnk/S4RfaCQzPGPyBNuVjJV3cd6UiKtUtp6sNM77gWvzcCH+g==
 
-xcode@^3.0.1:
-  version "3.0.1"
-  resolved "https://registry.npmjs.org/xcode/-/xcode-3.0.1.tgz"
-  integrity sha512-kCz5k7J7XbJtjABOvkc5lJmkiDh8VhjVCGNiqdKCscmVpdVUpEAyXv1xmCLkQJ5dsHqx3IPO4XW+NTDhU/fatA==
+xcode@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/xcode/-/xcode-4.0.0.tgz#cbcd6125a712d32478b27ee730afc4db4122b902"
+  integrity sha512-dDaoWzc9EP2fp9FS9PVZUkyvFxY4y1TOV9pcKaKLk++Ei/qb97XDFEVP7GnW7Osii/TzVABJ0jq2F+9/lq0TVA==
   dependencies:
-    simple-plist "^1.1.0"
-    uuid "^7.0.3"
+    simple-plist "^1.3.1"
 
 xml2js@0.6.0:
   version "0.6.0"
