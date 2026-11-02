@@ -926,12 +926,12 @@
     resolve-from "^5.0.0"
     semver "^7.7.4"
 
-"@expo/image-utils@^0.12.5":
-  version "0.12.5"
-  resolved "https://registry.yarnpkg.com/@expo/image-utils/-/image-utils-0.12.5.tgz#477b78d352b2201d27368fd25d31bda8c01e0eed"
-  integrity sha512-nsFYd7GfDdwZa+S+p+EkVCkh7UKKNf0kfUXDQ53HbyMmNFD3psb5JYwU/2N+uZG5wOEfKGfQ5u7pk/wn2gMlBA==
+"@expo/image-utils@^0.12.5", "@expo/image-utils@^0.12.6":
+  version "0.12.6"
+  resolved "https://registry.yarnpkg.com/@expo/image-utils/-/image-utils-0.12.6.tgz#ec89edf1fbf2410fe2a2fc912c2debcd01832f4a"
+  integrity sha512-AWzD/c3mM/a+sDbRgOSNzBpkUW8sUVUFcwnZ7xqkkhc5Hi9Fms0pDGw24JLxccgA6cC6bbJ8sZiQbnXBf75onA==
   dependencies:
-    "@expo/require-utils" "^58.0.4"
+    "@expo/require-utils" "^58.0.5"
     "@expo/spawn-async" "^1.8.0"
     chalk "^4.0.0"
     getenv "^2.0.0"
@@ -1127,6 +1127,15 @@
   version "58.0.4"
   resolved "https://registry.yarnpkg.com/@expo/require-utils/-/require-utils-58.0.4.tgz#e9548b7004ba14d948b2d2e8bf41e93b34777233"
   integrity sha512-DvjS5NCitXYcad2Woe1EMHJKcbhTbE77HX0BgOQGL2LFHE3q2H0n8kCWDPBOCVJ63Drap3c35nwoJwF5TQL7Tw==
+  dependencies:
+    "@babel/code-frame" "^7.20.0"
+    "@babel/core" "^7.25.2"
+    "@babel/plugin-transform-modules-commonjs" "^7.24.8"
+
+"@expo/require-utils@^58.0.5":
+  version "58.0.5"
+  resolved "https://registry.yarnpkg.com/@expo/require-utils/-/require-utils-58.0.5.tgz#f41c42faaa7287210a332545d36b73bbefb0d381"
+  integrity sha512-14dGubYUBmJjK9aqVSGnwSDs9uaxfzvtqJugtMCEWyuTa/eIvToUbzUwpKCSek6S/hYSEYcgds23vDJhXSBpbQ==
   dependencies:
     "@babel/code-frame" "^7.20.0"
     "@babel/core" "^7.25.2"
@@ -2280,12 +2289,12 @@ expo-keep-awake@~58.0.3:
   resolved "https://registry.yarnpkg.com/expo-keep-awake/-/expo-keep-awake-58.0.3.tgz#c29bc382d8d5b78e455c8f565fed36cf302645c7"
   integrity sha512-wLRF+XeVsD/Rt/ZyX+A0mk1brdf8vefWizNAPzqV5eOCgkj23LCRZdN8gUi5X8UwyR8UJ7Y7Dzdz4YDGB/4c9Q==
 
-expo-location@^58.0.18:
-  version "58.0.18"
-  resolved "https://registry.yarnpkg.com/expo-location/-/expo-location-58.0.18.tgz#57d7ed02e33e64bc1a1bc7e9ec055b6157f25e9e"
-  integrity sha512-iwCLGVA77g+iNweG5+Ng3LlLWena3DEWT5a/is7pB55TuaOhLY7hJRhas8LmjebELgvlH/C0YIqbETZB/4uW5w==
+expo-location@^58.0.20:
+  version "58.0.20"
+  resolved "https://registry.yarnpkg.com/expo-location/-/expo-location-58.0.20.tgz#2a936c0f361e164d115be5c9c4e877c7a77ba5c4"
+  integrity sha512-VE1WxyAbio+6UL/KWKLQH3opsKHkoRoe6EZdq9hoV2OYlrE3gAY9Ml1kYJ5LvPlqnzZA7PkbGxv+GJy0v+YGlw==
   dependencies:
-    "@expo/image-utils" "^0.12.5"
+    "@expo/image-utils" "^0.12.6"
 
 expo-modules-autolinking@~58.0.14, expo-modules-autolinking@~58.0.15:
   version "58.0.15"
